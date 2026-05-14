@@ -1,0 +1,223 @@
+{
+  "room": {
+    "width": 294,
+    "depth": 306,
+    "height": 270,
+    "wallColor": "#f0f0f0",
+    "floorColor": "#cfd8dc",
+    "wallOpacity": 0.5
+  },
+  "door": {
+    "wall": "right",
+    "x_offset": 214,
+    "y_offset": 0,
+    "width": 80,
+    "height": 210
+  },
+  "window": {
+    "wall": "bottom",
+    "x_offset": 65,
+    "y_offset": 111,
+    "width": 164,
+    "height": 117
+  },
+  "furniture": [
+    {
+      "type": "wardrobe_south",
+      "position": { "x": 29.5, "y": 0, "z": 207.5 },
+      "size": { "x": 59, "y": 220, "z": 197 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ffffff"
+    },
+    {
+      "type": "wardrobe_south_frame",
+      "position": { "x": 28.5, "y": 0, "z": 207.5 },
+      "size": { "x": 57, "y": 222, "z": 199 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#5d4037"
+    },
+    {
+      "type": "wardrobe_east",
+      "position": { "x": 103, "y": 0, "z": 276.5 },
+      "size": { "x": 206, "y": 220, "z": 59 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ffffff"
+    },
+    {
+      "type": "wardrobe_east_frame",
+      "position": { "x": 103, "y": 0, "z": 277.5 },
+      "size": { "x": 208, "y": 222, "z": 57 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#5d4037"
+    },
+    {
+      "type": "gamer_desk_left",
+      "position": { "x": 0, "y": 0, "z": 0 },
+      "shape": [
+        { "x": 0, "z": 0 },
+        { "x": 60, "z": 0 },
+        { "x": 60, "z": 109 },
+        { "x": 0, "z": 109 }
+      ],
+      "thickness": 3,
+      "elevation": 75,
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ffffff"
+    },
+    {
+      "type": "gamer_desk_right",
+      "position": { "x": 60, "y": 0, "z": 0 },
+      "shape": [
+        { "x": 0, "z": 0 },
+        { "x": 138, "z": 0 },
+        { "x": 138, "z": 75 },
+        { "x": 0, "z": 75 }
+      ],
+      "thickness": 3,
+      "elevation": 75,
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ffffff"
+    },
+    {
+      "type": "gamer_desk_side_panel",
+      "position": { "x": 196.5, "y": 0, "z": 37.5 },
+      "size": { "x": 3, "y": 75, "z": 75 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ffffff"
+    },
+    {
+      "type": "bed",
+      "position": { "x": 246, "y": 0, "z": 98 },
+      "size": { "x": 90, "y": 45, "z": 190 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#37474f"
+    },
+    {
+      "type": "bed_wood_panel_head",
+      "position": { "x": 247.5, "y": 0, "z": 1.5 },
+      "size": { "x": 93, "y": 75, "z": 3 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#5d4037"
+    },
+    {
+      "type": "bed_wood_panel_side",
+      "position": { "x": 292.5, "y": 0, "z": 98 },
+      "size": { "x": 3, "y": 75, "z": 190 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#5d4037"
+    },
+    {
+      "type": "gamer_chair",
+      "position": { "x": 132, "y": 0, "z": 120 },
+      "size": { "x": 50, "y": 115, "z": 50 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#263238"
+    },
+    {
+      "type": "acoustic_panel_1",
+      "position": { "x": 102, "y": 150, "z": 1 },
+      "size": { "x": 40, "y": 60, "z": 2 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#90a4ae"
+    },
+    {
+      "type": "acoustic_panel_2",
+      "position": { "x": 162, "y": 160, "z": 1 },
+      "size": { "x": 40, "y": 60, "z": 2 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#b0bec5"
+    },
+    {
+      "type": "monitor_left",
+      "position": { "x": 102, "y": 75, "z": 20 },
+      "size": { "x": 55, "y": 35, "z": 5 },
+      "rotation": { "x": 0, "y": 15, "z": 0 },
+      "color": "#1e1e1e"
+    },
+    {
+      "type": "monitor_right",
+      "position": { "x": 162, "y": 75, "z": 20 },
+      "size": { "x": 55, "y": 35, "z": 5 },
+      "rotation": { "x": 0, "y": -15, "z": 0 },
+      "color": "#1e1e1e"
+    },
+    {
+      "type": "pc_tower",
+      "position": { "x": 30, "y": 75, "z": 80 },
+      "size": { "x": 22, "y": 45, "z": 45 },
+      "rotation": { "x": 0, "y": 90, "z": 0 },
+      "color": "#ffffff"
+    },
+    {
+      "type": "keyboard",
+      "position": { "x": 132, "y": 75, "z": 40 },
+      "size": { "x": 45, "y": 2, "z": 15 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#222222"
+    },
+    {
+      "type": "picture_frame",
+      "position": { "x": 180, "y": 75, "z": 20 },
+      "size": { "x": 15, "y": 20, "z": 2 },
+      "rotation": { "x": 0, "y": -20, "z": 0 },
+      "color": "#dddddd"
+    },
+    {
+      "type": "book_1",
+      "position": { "x": 12.5, "y": 131.5, "z": 20 },
+      "size": { "x": 18, "y": 22, "z": 4 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ff5555"
+    },
+    {
+      "type": "book_2",
+      "position": { "x": 12.5, "y": 131.5, "z": 24.5 },
+      "size": { "x": 18, "y": 20, "z": 4 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#5555ff"
+    },
+    {
+      "type": "book_3",
+      "position": { "x": 12.5, "y": 131.5, "z": 29 },
+      "size": { "x": 18, "y": 24, "z": 4 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#33cc33"
+    },
+    {
+      "type": "plant_pot",
+      "position": { "x": 12.5, "y": 171.5, "z": 80 },
+      "size": { "x": 12, "y": 10, "z": 12 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ffffff"
+    },
+    {
+      "type": "plant_leaves",
+      "position": { "x": 12.5, "y": 181.5, "z": 80 },
+      "size": { "x": 16, "y": 16, "z": 16 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#228b22"
+    },
+    {
+      "type": "carpet",
+      "position": { "x": 150, "y": 0, "z": 140 },
+      "size": { "x": 120, "y": 2, "z": 160 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#eceff1"
+    },
+    {
+      "type": "book_shelf_lower",
+      "position": { "x": 12.5, "y": 130, "z": 54.5 },
+      "size": { "x": 25, "y": 3, "z": 109 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ffffff"
+    },
+    {
+      "type": "book_shelf_upper",
+      "position": { "x": 12.5, "y": 170, "z": 54.5 },
+      "size": { "x": 25, "y": 3, "z": 109 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ffffff"
+    }
+  ]
+}
+
