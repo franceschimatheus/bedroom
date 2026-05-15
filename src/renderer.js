@@ -10,6 +10,12 @@ export class RoomRenderer {
     this.textureLoader = new THREE.TextureLoader();
     this.wallThickness = 0.15;
     this.wallMeshes = [];
+    this.furnitureMeshes = [];
+    this.raycaster = new THREE.Raycaster();
+    this.mouse = new THREE.Vector2();
+    this.tooltipCallback = null;
+    this._hoveredMesh = null;
+    this._onMouseMove = this._onMouseMove.bind(this);
   }
 
   init() {
@@ -84,6 +90,9 @@ export class RoomRenderer {
     // Resize handler
     window.addEventListener('resize', this.onWindowResize.bind(this));
 
+    // Mouse move for hover tooltip
+    this.renderer.domElement.addEventListener('mousemove', this._onMouseMove);
+
     // Animation Loop
     this.renderer.setAnimationLoop(this.animate.bind(this));
   }
@@ -99,8 +108,38 @@ export class RoomRenderer {
     this.renderer.render(this.scene, this.camera);
   }
 
+  setTooltipCallback(fn) {
+    this.tooltipCallback = fn;
+  }
+
+  _onMouseMove(event) {
+    const rect = this.renderer.domElement.getBoundingClientRect();
+    this.mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+    this.mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+    this.raycaster.setFromCamera(this.mouse, this.camera);
+    const hits = this.raycaster.intersectObjects(this.furnitureMeshes, false);
+
+    const hit = hits.length > 0 ? hits[0].object : null;
+    if (hit !== this._hoveredMesh) {
+      this._hoveredMesh = hit;
+      if (this.tooltipCallback) {
+        this.tooltipCallback(
+          hit ? hit.userData.furnitureName : null,
+          event.clientX,
+          event.clientY
+        );
+      }
+    } else if (hit && this.tooltipCallback) {
+      // Update position even if same mesh
+      this.tooltipCallback(hit.userData.furnitureName, event.clientX, event.clientY);
+    }
+  }
+
   clearRoom() {
     this.wallMeshes = [];
+    this.furnitureMeshes = [];
+    this._hoveredMesh = null;
     while (this.roomGroup.children.length > 0) {
       const child = this.roomGroup.children[0];
       this.roomGroup.remove(child);
@@ -354,6 +393,13 @@ export class RoomRenderer {
         metalness: 0.1
       });
       const mesh = new THREE.Mesh(geo, mat);
+
+      // Tag mesh with furniture name for raycasting tooltip
+      const label = item.type
+        ? item.type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+        : 'Furniture';
+      mesh.userData.furnitureName = label;
+      this.furnitureMeshes.push(mesh);
       
       mesh.position.set(posX, posY, posZ);
       mesh.rotation.set(

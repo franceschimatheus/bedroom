@@ -1,0 +1,110 @@
+{
+  "room": {
+    "width": 294,
+    "depth": 306,
+    "height": 270,
+    "wallColor": "#22333b",
+    "floorColor": "#eae0d5",
+    "wallOpacity": 0.5
+  },
+  "door": {
+    "wall": "right",
+    "x_offset": 214,
+    "y_offset": 0,
+    "width": 80,
+    "height": 210
+  },
+  "window": {
+    "wall": "bottom",
+    "x_offset": 65,
+    "y_offset": 111,
+    "width": 164,
+    "height": 117
+  },
+  "furniture": [
+    {
+      "type": "corner_desk",
+      "position": { "x": 60, "y": 0, "z": 240 },
+      "size": { "x": 120, "y": 75, "z": 60 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#5e503f"
+    },
+    {
+      "type": "monitor_1",
+      "position": { "x": 40, "y": 75, "z": 260 },
+      "size": { "x": 50, "y": 30, "z": 5 },
+      "rotation": { "x": 0, "y": 10, "z": 0 },
+      "color": "#000000"
+    },
+    {
+      "type": "monitor_2",
+      "position": { "x": 90, "y": 75, "z": 260 },
+      "size": { "x": 50, "y": 30, "z": 5 },
+      "rotation": { "x": 0, "y": -10, "z": 0 },
+      "color": "#000000"
+    },
+    {
+      "type": "printer_shelf",
+      "position": { "x": 160, "y": 0, "z": 270 },
+      "size": { "x": 60, "y": 100, "z": 40 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#a9927d"
+    },
+    {
+      "type": "3d_printer",
+      "position": { "x": 160, "y": 100, "z": 270 },
+      "size": { "x": 40, "y": 45, "z": 40 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#49111c"
+    },
+    {
+      "type": "corner_sofa",
+      "position": { "x": 250, "y": 0, "z": 50 },
+      "size": { "x": 80, "y": 45, "z": 100 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#c6ac8f"
+    },
+    {
+      "type": "guitar_stand",
+      "position": { "x": 120, "y": 0, "z": 30 },
+      "size": { "x": 40, "y": 5, "z": 30 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#22333b"
+    },
+    {
+      "type": "guitar_1",
+      "position": { "x": 110, "y": 5, "z": 30 },
+      "size": { "x": 12, "y": 90, "z": 12 },
+      "rotation": { "x": 10, "y": 0, "z": 0 },
+      "color": "#5d4037"
+    },
+    {
+      "type": "guitar_2",
+      "position": { "x": 130, "y": 5, "z": 30 },
+      "size": { "x": 12, "y": 90, "z": 12 },
+      "rotation": { "x": 10, "y": 0, "z": 0 },
+      "color": "#111111"
+    },
+    {
+      "type": "book_stack",
+      "position": { "x": 260, "y": 0, "z": 250 },
+      "size": { "x": 30, "y": 40, "z": 40 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#333333"
+    },
+    {
+      "type": "figure_1",
+      "position": { "x": 180, "y": 0, "z": 270 },
+      "size": { "x": 10, "y": 20, "z": 10 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#ff0000"
+    },
+    {
+      "type": "figure_2",
+      "position": { "x": 200, "y": 0, "z": 270 },
+      "size": { "x": 10, "y": 15, "z": 10 },
+      "rotation": { "x": 0, "y": 0, "z": 0 },
+      "color": "#00ff00"
+    }
+  ]
+}
