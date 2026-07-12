@@ -5,7 +5,11 @@
     "height": 270,
     "wallColor": "#f0f0f0",
     "floorColor": "#cfd8dc",
-    "wallOpacity": 0.5
+    "wallOpacity": 0.5,
+    "initialCamera": {
+      "position": { "x": 374, "y": 880, "z": 180 },
+      "target": { "x": 100, "y": 75, "z": 50 }
+    }
   },
   "door": {
     "wall": "right",
@@ -70,8 +74,8 @@
       "shape": [
         { "x": 0, "z": 0 },
         { "x": 138, "z": 0 },
-        { "x": 138, "z": 75 },
-        { "x": 0, "z": 75 }
+        { "x": 138, "z": 70 },
+        { "x": 0, "z": 70 }
       ],
       "thickness": 3,
       "elevation": 75,
@@ -80,8 +84,8 @@
     },
     {
       "type": "gamer_desk_side_panel",
-      "position": { "x": 196.5, "y": 0, "z": 37.5 },
-      "size": { "x": 3, "y": 75, "z": 75 },
+      "position": { "x": 196.5, "y": 0, "z": 35 },
+      "size": { "x": 3, "y": 75, "z": 70 },
       "rotation": { "x": 0, "y": 0, "z": 0 },
       "color": "#ffffff"
     },
@@ -108,7 +112,7 @@
     },
     {
       "type": "gamer_chair",
-      "position": { "x": 132, "y": 0, "z": 120 },
+      "position": { "x": 132, "y": 0, "z": 115 },
       "size": { "x": 50, "y": 115, "z": 50 },
       "rotation": { "x": 0, "y": 0, "z": 0 },
       "color": "#263238"
@@ -150,7 +154,7 @@
     },
     {
       "type": "keyboard",
-      "position": { "x": 132, "y": 75, "z": 40 },
+      "position": { "x": 132, "y": 75, "z": 35 },
       "size": { "x": 45, "y": 2, "z": 15 },
       "rotation": { "x": 0, "y": 0, "z": 0 },
       "color": "#222222"

@@ -203,10 +203,23 @@ export class RoomRenderer {
     }
 
     // Center camera on room
-    const centerX = parsedData.room.width / 2;
-    const centerZ = parsedData.room.depth / 2;
-    this.controls.target.set(centerX, 0, centerZ);
-    this.camera.position.set(centerX + 4, 3, centerZ + 4);
+    if (data.room.initialCamera) {
+      this.camera.position.set(
+        cmToM(data.room.initialCamera.position.x),
+        cmToM(data.room.initialCamera.position.y),
+        cmToM(data.room.initialCamera.position.z)
+      );
+      this.controls.target.set(
+        cmToM(data.room.initialCamera.target.x),
+        cmToM(data.room.initialCamera.target.y),
+        cmToM(data.room.initialCamera.target.z)
+      );
+    } else {
+      const centerX = parsedData.room.width / 2;
+      const centerZ = parsedData.room.depth / 2;
+      this.controls.target.set(centerX, 0, centerZ);
+      this.camera.position.set(centerX + 4, 3, centerZ + 4);
+    }
     this.controls.update();
   }
 

@@ -2,16 +2,12 @@ import './style.css';
 import { RoomRenderer } from './renderer.js';
 import roomData1 from './room-1.json';
 import roomData2 from './room-2.json';
-import roomData3 from './room-3.json';
-import roomData4 from './room-4.json';
-import roomData5 from './room-5.json';
+import roomData6 from './room-6.json';
 
 const rooms = {
   'room-1': roomData1,
   'room-2': roomData2,
-  'room-3': roomData3,
-  'room-4': roomData4,
-  'room-5': roomData5,
+  'room-6': roomData6,
 };
 
 const appDiv = document.getElementById('app');
@@ -25,11 +21,9 @@ uiDiv.innerHTML = `
     <label for="roomSelect" style="font-size: 13px; font-weight: 500; color: #333;">Room Layout:</label>
     <br/>
     <select id="roomSelect" style="width: 100%; margin-top: 5px; padding: 4px 6px; cursor: pointer; border-radius: 4px; border: 1px solid #ccc;">
-      <option value="room-1">Room 1 (Original)</option>
+      <option value="room-1" selected>Room 1 (Original)</option>
       <option value="room-2">Room 2 (Full-wall desk)</option>
-      <option value="room-3" selected>Room 3 (Gamer Den)</option>
-      <option value="room-4">Room 4 (The Workshop)</option>
-      <option value="room-5">Room 5 (Zen Corner)</option>
+      <option value="room-6">Room 6 (Room 2 180x70)</option>
     </select>
   </div>
   <div style="margin-top: 15px;">
@@ -104,7 +98,7 @@ opacitySlider.addEventListener('input', (e) => {
 
 // Handle Vite HMR
 if (import.meta.hot) {
-  import.meta.hot.accept(['./room-1.json', './room-2.json', './room-3.json', './room-4.json', './room-5.json'], () => {
+  import.meta.hot.accept(['./room-1.json', './room-2.json', './room-6.json'], () => {
     loadSelectedRoom();
   });
 }

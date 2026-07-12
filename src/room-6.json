@@ -42,22 +42,22 @@
     },
     {
       "type": "gamer_desk",
-      "position": { "x": 264, "y": 0, "z": 107 },
-      "size": { "x": 60, "y": 75, "z": 180 },
+      "position": { "x": 259, "y": 0, "z": 107 },
+      "size": { "x": 70, "y": 75, "z": 180 },
       "rotation": { "x": 0, "y": 0, "z": 0 },
       "color": "#363636"
     },
     {
       "type": "red_sheet",
-      "position": { "x": 264, "y": 75.1, "z": 42 },
-      "size": { "x": 60, "y": 0.2, "z": 50 },
+      "position": { "x": 259, "y": 75.1, "z": 42 },
+      "size": { "x": 70, "y": 0.2, "z": 50 },
       "rotation": { "x": 0, "y": 0, "z": 0 },
       "color": "#ff4444"
     },
     {
       "type": "green_sheet",
-      "position": { "x": 264, "y": 75.1, "z": 132 },
-      "size": { "x": 60, "y": 0.2, "z": 130 },
+      "position": { "x": 259, "y": 75.1, "z": 132 },
+      "size": { "x": 70, "y": 0.2, "z": 130 },
       "rotation": { "x": 0, "y": 0, "z": 0 },
       "color": "#44ff44"
     },
@@ -84,7 +84,7 @@
     },
     {
       "type": "gamer_chair",
-      "position": { "x": 169, "y": 0, "z": 132 },
+      "position": { "x": 159, "y": 0, "z": 132 },
       "size": { "x": 50, "y": 115, "z": 50 },
       "rotation": { "x": 0, "y": 90, "z": 0 },
       "color": "#ff3b3b"
@@ -112,7 +112,7 @@
     },
     {
       "type": "keyboard",
-      "position": { "x": 240, "y": 75, "z": 132 },
+      "position": { "x": 230, "y": 75, "z": 132 },
       "size": { "x": 15, "y": 2, "z": 45 },
       "rotation": { "x": 0, "y": 0, "z": 0 },
       "color": "#222222"
